@@ -32,12 +32,15 @@ public class Main {
 		System.out.println("Digite o número do seu CPF:");
 		cpf = sc.nextLine().trim();
 		
-		
+		System.out.println("Nome do Usúario:" + nomeUsuario);
+		System.out.println("Região onde foi negociado o produto:" + regiao);
+		System.out.println("Contato do usúario:" + numeroDeTelefone);
+		System.out.println("Número do cpf:" + cpf);
 
 		
 		UserData userData = new UserData(nomeUsuario, regiao, numeroDeTelefone, cpf);
 		userData.adicionarProdutos();
-		userData.mostrarProduto();
+		
 			
 		sc.close();
 		
